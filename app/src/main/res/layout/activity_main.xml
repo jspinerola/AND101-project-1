@@ -27,21 +27,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="60dp"
-                android:src="@drawable/avatar_9"/>
+                app:srcCompat="@drawable/avatar_9"/>
 
             <TextView
                 android:id="@+id/profile_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/profile_image"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="50dp"
-                tools:text="First Last"
-                android:textSize="24sp"
+                android:textAllCaps="true"
                 android:textColor="@color/black"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:textAllCaps="true"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_image"
+                tools:text="@string/full_name" />
 
             <TextView
                 android:id="@+id/profile_bio"
